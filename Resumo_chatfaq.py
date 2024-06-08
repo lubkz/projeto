@@ -192,7 +192,7 @@ def encontrar_resposta(pergunta):
 
     # Aqui, enfim, eu uso aqueles valores de antes e definir as principais respostas.
     #Se o melhor_score for maior do que 0, ou seja, ele sempre vai ser obrigatoriamente maior do
-    #que 0 quando o código executar tudo, ou seja, isso só executa quando tudo já foi executado nessa função
+    #que 0 quando a SIMILARIDADE for MAIOR que 90.
 
     if melhor_score > 0:
 
