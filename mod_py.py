@@ -10,24 +10,15 @@ faq = {
 }
 
 def encontrar_resposta(pergunta):
-    for palavra_chave in pergunta:
-        if pergunta == "1":
-            print("estou funcionando")
-        elif pergunta == "2":
-            print("pao com banana")
-        elif pergunta == "3":
-            print("Teste ando")
-        elif pergunta == "4":
-            print("numero 4")
-        elif pergunta == "5":
-            print("número 5")
-        elif pergunta == "6":
-            print("numero 6")
+        for palavra_chave, resposta in faq.items():
+            if palavra_chave in pergunta:
+                return resposta
 
 
 while True:
     pergunta = input("Digite sua pergunta: ")
     resposta = encontrar_resposta(pergunta)
+    print(resposta)
     confirm = input("Deseja fazer mais alguma pergunta? S/N: ")
     confirm = confirm.upper()
     if confirm == "N":
