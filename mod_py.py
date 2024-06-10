@@ -13,7 +13,7 @@ faq_respostas = {
 }
 
 #Dicionário Faq das opções do usuário.
-#Na esquerda trmos palavras chaves e na direita temos as respostas relacionadas a cada palavra chave.
+#Na esquerda trmos palavras chaves e na direita temos os valores relacionadas a cada palavra chave.
 #Os dois valores estão ligados por conta do ":" e são atribuídos a variáveis mais pra frente.
 
 faq_perguntas = {
