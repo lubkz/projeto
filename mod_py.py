@@ -1,3 +1,4 @@
+n
 # Dicionário FAQ com palavras-chave e respostas.
 faq_respostas = {
     "1" : "O horário de atendimento é...",
@@ -24,6 +25,8 @@ def encontrar_resposta(pergunta):
         for palavra_chave, resposta in faq_respostas.items():
             if palavra_chave in pergunta:
                 return resposta
+            else:
+                return "Desculpe, não entendi qual sua dúvida."
 
 
 while True:
