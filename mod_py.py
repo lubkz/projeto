@@ -33,6 +33,7 @@ def encontrar_resposta(pergunta):
             #Se houver uma palavra_chave dentro da pergunta:
             if palavra_chave in pergunta:
                 #Retorna o valor correspondente da resposta no faq_RESPOSTAS.
+                #Exemplo: Digitei o número "1". Ele vai reconhecer o "1" e responder o que vem depois do ":" na linha do "1" no dicionário faq_RESPOSTAS.
                 return resposta
             #Caso nao haja nenhuma palavra_chave dentro da pergunta:
             else:
