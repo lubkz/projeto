@@ -1,4 +1,3 @@
-n
 # Dicionário FAQ com palavras-chave e respostas.
 # Na esquerda trmos palavras chaves e na direita temos as respostas relacionadas a cada palavra chave.
 # Os dois valores estão ligados por conta do ":" e são atribuídos a variáveis mais pra frente.
