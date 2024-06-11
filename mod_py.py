@@ -30,7 +30,7 @@ def encontrar_resposta(pergunta):
         #Para cada palavra_chave e resposta nos itens da faq_respostas:
         for palavra_chave, resposta in faq_respostas.items():
             #Se houver uma palavra_chave dentro da pergunta:
-            if palavra_chave in pergunta:
+            if palavra_chave == pergunta:
                 #Retorna o valor correspondente da resposta no faq_RESPOSTAS.
                 #Exemplo: Digitei o número "1". Ele vai reconhecer o "1" e responder o que vem depois do ":" na linha do "1" no dicionário faq_RESPOSTAS.
                 return resposta
@@ -48,7 +48,7 @@ while True:
     # Para cada palavra_chave, resposta nos itens da faq_PERGUNTAS:
     for palavra_chave, resposta in faq_perguntas.items():
         #Exibe todos os valores do dicionário de perguntas:
-        print(palavra_chave, resposta)
+        print(f"{palavra_chave}: {resposta}")
         
     # Fazendo a pergunta ao usuário e atribuindo a informação dele a uma variável "pergunta", utilizada na função encontrar_resposta.
     # Aqui é o início de todo o código.
