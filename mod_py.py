@@ -34,10 +34,10 @@ def encontrar_resposta(pergunta):
                 #Retorna o valor correspondente da resposta no faq_RESPOSTAS.
                 #Exemplo: Digitei o número "1". Ele vai reconhecer o "1" e responder o que vem depois do ":" na linha do "1" no dicionário faq_RESPOSTAS.
                 return resposta
-            #Caso nao haja nenhuma palavra_chave dentro da pergunta:
-            else:
-                #Retorna um valor de string padrão com a mensagem a seguir:
-                return "Desculpe, não entendi qual sua dúvida."
+        # Caso nao haja nenhuma palavra_chave dentro da pergunta, o looping termina e naõ retorna nenhum valor.
+        # Sobrando apenas executar o valor padrão abaixo.
+        # Retorna um valor de string padrão com a mensagem a seguir:   
+        return "Desculpe, não entendi qual sua dúvida."
 
 #Executa indefinidamente dentro do programa, até see interrompido
 while True:
