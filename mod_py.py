@@ -31,7 +31,7 @@ faq_perguntas = {
 def encontrar_resposta(pergunta):
     # Para cada palavra_chave e resposta nos itens da faq_respostas:
     for palavra_chave, resposta in faq_respostas.items():
-        # Se houver uma palavra_chave dentro da pergunta:
+        # Se houver uma palavra_chave que seja IGUAL a pergunta:
         if palavra_chave == pergunta:
             # Retorna o valor correspondente da resposta no faq_RESPOSTAS.
             # Exemplo: Digitei o número "1". Ele vai reconhecer o "1" e responder o que vem depois do ":" na linha do "1" no dicionário faq_RESPOSTAS.
