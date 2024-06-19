@@ -1,8 +1,5 @@
 import random
 # Dicionário FAQ com palavras-chave e respostas.
-# Na esquerda trmos palavras chaves e na direita temos as respostas relacionadas a cada palavra chave.
-# Os dois valores estão ligados por conta do ":" e são atribuídos a variáveis mais pra frente.
-# Dicionário FAQ com palavras-chave e respostas.
 faq_respostas = {
     "1": "O horário de atendimento é das 9:00 até às 17:00 horas!",
     "2": "O local de atendimento é na parte leste da empresa ao lado da biblioteca!",
@@ -28,6 +25,7 @@ faq_respostas = {
     "22": "Interessado em tendências atuais de design de interiores? Acesse nosso blog em www.enterprizes-blog.com!"
 }
 
+# Variável responsável pelas opções que irão aparecer para o usuário.
 faq_perguntas = {
     "1": "Qual o horário de atendimento?",
     "2": "Quais os locais em que a empresa trabalha?",
@@ -63,8 +61,6 @@ def encontrar_resposta(pergunta):
             # Retorna o valor correspondente da resposta no faq_RESPOSTAS.
             # Exemplo: Digitei o número "1". Ele vai reconhecer o "1" e responder o que vem depois do ":" na linha do "1" no dicionário faq_RESPOSTAS.
             return resposta
-    # Caso nao haja nenhuma palavra_chave igual a pergunta, o looping termina e naõ retorna nenhum valor.
-    #Sobrando apenas executar o valor padrão abaixo.
     # Retorna um valor de string padrão com a mensagem a seguir:
     return "Desculpe, não entendi qual sua dúvida."
 
